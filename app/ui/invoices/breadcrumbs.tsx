@@ -1,4 +1,3 @@
-import {  } from '';
 import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts';
 
@@ -21,7 +20,7 @@ export default function Breadcrumbs({
             key={breadcrumb.href}
             aria-current={breadcrumb.active}
             className={(
-              breadcrumb.active ? 'text-gray-900' : 'text-gray-500',
+              breadcrumb.active ? 'text-gray-900' : 'text-gray-500'
             )}
           >
             <Link href={breadcrumb.href}>{breadcrumb.label}</Link>
